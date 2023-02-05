@@ -12,36 +12,34 @@
 
 <body>
     <header class="bg-dark text-light m-2">
-        <h1>Weather Dashboard</h1>
+        <h1 class="text-center">Weather Dashboard</h1>
     </header>
     <div class="m-3">
         <main class="row d-flex">
             <aside class="col-lg-2 row">
                 <nav class="border-bottom border-2 pb-3">
-                    <h3>Search for a City:</h3>
-                    <form class="col">
-                        <input class="col-lg-12" type="text" placeholder='Search "Atlantis"'></input>
-                        <button class="col-lg-12" type="submit">Search</button>
+                    <h2>Search for a City:</h2>
+                    <form class="col" id="city-form">
+                        <input class="col-lg-12 mb-1 rounded" id="city-name" type="text" placeholder='Search "Atlantis"'></input>
+                        <button class="col-lg-12 mt-1 rounded bg-primary text-light" type="submit">Search</button>
                     </form>
                 </nav>
-                <ul>
-
-                </ul>
+                <ul id="city-buttons"></ul>
             </aside>
             <div class="col-lg-1"></div>
-            <figure class="col-lg-9">
-                <figcaption>
+            <figure class="col-lg-9" id="weather-container">
+                <figcaption class="col-lg-12">
                     Today's Forecast
                 </figcaption>
-                <div>
+                <h3>
                     5-Day Forecast:
-                </div>
+                </h3>
                 <section class="row d-flex">
                     <article class="col-lg-2">Tomorrow's Forecast</article>
-                    <article class="col-lg-2">Following Forecast</article>
-                    <article class="col-lg-2">Following Forecast</article>
-                    <article class="col-lg-2">Following Forecast</article>
-                    <article class="col-lg-2">Following Forecast</article>
+                    <article class="col-lg-2">Day After Forecast</article>
+                    <article class="col-lg-2">Day After Forecast</article>
+                    <article class="col-lg-2">Day After Forecast</article>
+                    <article class="col-lg-2">Day After Forecast</article>
                 </section>
             </figure>
         </main>
