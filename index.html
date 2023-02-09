@@ -24,26 +24,37 @@
                         <button class="col-lg-12 mt-1 rounded bg-primary text-light" type="submit">Search</button>
                     </form>
                 </nav>
-                <ul id="city-buttons"></ul>
+                <div id="history"></div>
             </aside>
             <div class="col-lg-1"></div>
-            <figure class="col-lg-9" id="weather-container">
-                <figcaption class="col-lg-12">
-                    Today's Forecast
-                </figcaption>
+            <div class="col-lg-9" id="weather-container">
+                <div class="col-lg-12" id="today">
+                    
+                </div>
                 <h3>
                     5-Day Forecast:
                 </h3>
-                <section class="row d-flex">
-                    <article class="col-lg-2">Tomorrow's Forecast</article>
-                    <article class="col-lg-2">Day After Forecast</article>
-                    <article class="col-lg-2">Day After Forecast</article>
-                    <article class="col-lg-2">Day After Forecast</article>
-                    <article class="col-lg-2">Day After Forecast</article>
+                <section class="row d-flex" id="forecast">
+                    
                 </section>
-            </figure>
+            </div>
         </main>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+      integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
