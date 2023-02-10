@@ -12,6 +12,8 @@ var searchHistoryContainer = document.querySelector('#history');
 
 var formSubmitHandler = function (event) {
     event.preventDefault();
+    document.getElementById("today").innerHTML = "";
+    document.getElementById("forecast").innerHTML = "";
 
     var cityName = cityInputEl.value.trim();
 
@@ -206,7 +208,6 @@ var renderForecastCard = function (forecast) {
     humidityEl.textContent = `Humidity: ${humidity} %`;
 
     forecastContainer.append(col);
-}
+};
 
 cityFormEl.addEventListener('submit', formSubmitHandler);
-cityButtonsEl.addEventListener('click', buttonClickHandler);
